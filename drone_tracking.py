@@ -3,8 +3,9 @@ import cv2
 video_path = 'Drone.mp4'  
 cap = cv2.VideoCapture(video_path) 
 
-tracker = cv2.TrackerCSRT_create()
+# cap = cv2.VideoCapture(0) 
 
+tracker = cv2.TrackerCSRT_create()
 
 ret, frame = cap.read()
 
